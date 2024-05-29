@@ -112,14 +112,15 @@ class Password extends Component {
             <h1>Add New Password</h1>
             <form onSubmit={this.onsubmitOff}>
               <div>
-                <lebal>
+                <label htmlFor="website">
                   <img
                     className="input-img"
                     src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
                     alt="website"
                   />
-                </lebal>
+                </label>
                 <input
+                  id="website"
                   placeholder="Enter Website"
                   type="text"
                   onChange={this.onchangeWebsite}
@@ -127,14 +128,15 @@ class Password extends Component {
                 />
               </div>
               <div>
-                <lebal>
+                <label htmlFor="username">
                   <img
                     className="input-img"
                     src="https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png"
                     alt="username"
                   />
-                </lebal>
+                </label>
                 <input
+                  id="username"
                   placeholder="Enter Username"
                   type="text"
                   onChange={this.onchangeUsername}
@@ -142,14 +144,15 @@ class Password extends Component {
                 />
               </div>
               <div>
-                <lebal>
+                <label htmlFor="password">
                   <img
                     className="input-img"
                     src="https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png"
                     alt="password"
                   />
-                </lebal>
+                </label>
                 <input
+                  id="password"
                   placeholder="Enter Password"
                   type="password"
                   onChange={this.onchangePassword}
@@ -174,11 +177,12 @@ class Password extends Component {
               <p>{numOfPasswords}</p>
             </div>
             <div className="search-box">
-              <img
+              <label htmlFor="search"><img
                 src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
                 alt="search"
-              />
-              <input
+              /></label>
+              <input 
+                id="search"
                 type="search"
                 value={search}
                 onChange={this.onClickSearch}
@@ -191,7 +195,7 @@ class Password extends Component {
               type="checkbox"
               onClick={this.onclickCheckbox}
             />
-            <lebal htmlFor="checkbox">Show passwords</lebal>
+            <label htmlFor="checkbox">Show passwords</label>
           </div>
 
           {passwordList.length === 0 ? (
