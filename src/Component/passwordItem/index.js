@@ -2,14 +2,8 @@ import './index.css'
 
 const PasswordItem = props => {
   const {eachPassword, ispasswordvisible, deletePassword} = props
-  const {
-    id,
-    username,
-    website,
-    password,
-    passwordLength,
-    hidePasswordImage,
-  } = eachPassword
+  const {id, username, website, password, passwordLength, hidePasswordImage} =
+    eachPassword
 
   const onClickDelete = () => {
     deletePassword(id)
@@ -40,9 +34,9 @@ const PasswordItem = props => {
           <p>{savedpassword()}</p>
         </div>
         <div>
-          <button data-testid="delete">
+          <button data-testid="delete" onClick={onClickDelete}>
             <img
-              onClick={onClickDelete}
+              
               src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
               alt="delete"
             />

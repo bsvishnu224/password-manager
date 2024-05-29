@@ -177,11 +177,13 @@ class Password extends Component {
               <p>{numOfPasswords}</p>
             </div>
             <div className="search-box">
-              <label htmlFor="search"><img
-                src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
-                alt="search"
-              /></label>
-              <input 
+              <label htmlFor="search">
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
+                  alt="search"
+                />
+              </label>
+              <input
                 id="search"
                 type="search"
                 value={search}
@@ -198,7 +200,7 @@ class Password extends Component {
             <label htmlFor="checkbox">Show passwords</label>
           </div>
 
-          {passwordList.length === 0 ? (
+          {searchPasswords.length === 0 ? (
             <div className="no-password-container">
               <img
                 className="no-password-img"
