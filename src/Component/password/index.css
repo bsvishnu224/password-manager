@@ -1,0 +1,43 @@
+.main-container {
+  background-image: linear-gradient(#9ba9eb, #c3caea);
+}
+.password-search-container {
+  display: flex;
+  justify-content: space-between;
+}
+.input-container {
+  background-color: #454f84;
+  display: flex;
+}
+.logo-image {
+  width: 200px;
+}
+.input-img {
+  width: 30px;
+}
+.password-manager {
+  width: 200px;
+}
+.password-count {
+  display: flex;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+}
+.check-box {
+  text-align: end;
+}
+.no-password-img {
+  width: 250px;
+  text-align: center;
+}
+.storage-container {
+  background-color: #454f84;
+}
+.no-password-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
